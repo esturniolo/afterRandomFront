@@ -17,4 +17,4 @@ jobs:
         script: echo "eas was here" > ~/public_html/eas.html
         if_key_exists: fail
     - name: sending new files to public
-      run: rsync . afterrandom@afterrandom.com.ar:/home10/afterrandom/public_html
+      run: rsync -avzh -e 'ssh -p ${{ secrets.PORT }}' --progress . afterrandom@afterrandom.com.ar:/home10/afterrandom/public_html
