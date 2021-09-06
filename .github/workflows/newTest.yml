@@ -1,7 +1,15 @@
-- name: test pwd
-  uses: garygrossgarten/github-action-ssh@release
-  with:
-    command: pwd
-    host: ${{ secrets.HOST }}
-    username: afterrandom
-    privateKey: ${{ secrets.SSH_PRIV_NAME}}
+name: test new ssh action
+on: [push]
+jobs:
+
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+    - name: test pwd
+      uses: garygrossgarten/github-action-ssh@release
+      with:
+        command: pwd
+        host: ${{ secrets.HOST }}
+        username: afterrandom
+        privateKey: ${{ secrets.SSH_PRIV_NAME}}
