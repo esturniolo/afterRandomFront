@@ -10,12 +10,14 @@ jobs:
       # uses: appleboy/ssh-action@master
       uses: shimataro/ssh-key-action@v2
       with:
-        key: ${{ secrets.SSH_PRIV_NAME }}
+        key: ${{ secrets.SSH_PRIV }}
         known_hosts: ${{ secrets.KNOWN_HOSTS }}
         port: ${{ secrets.PORT }}
         # script: whoami
         # script: echo "eas was here" > ~/public_html/eas.html
+        script: pwd
         if_key_exists: fail
+        name: ${{ secrets.SSH_KEY_NAME }}
     - name: sending new files to public
-      run: ls -a
+      run: echo "mirar que hizo el script del with"
       # run: rsync -avzh -e 'ssh -p 9022' --progress . afterrandom@afterrandom.com.ar:/home10/afterrandom/public_html
