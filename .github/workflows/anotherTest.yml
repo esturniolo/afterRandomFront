@@ -10,9 +10,10 @@ jobs:
       uses: easingthemes/ssh-deploy@main
       env:
         SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIV }}
-        ARGS: "-avzh -e 'ssh -p 9022'"
+        ARGS: "-avzh"
         SOURCE: "/"
         REMOTE_HOST: afterrandom.com.ar
         REMOTE_USER: afterrandom
-        TARGET: "/home10/afterrandom/public_html/"
+        REMOTE_PORT: 9022
+        TARGET: "/home10/afterrandom/public_html"
         EXCLUDE: "/.github/, /node_modules/"
