@@ -13,3 +13,4 @@ jobs:
         host: ${{ secrets.HOST }}
         username: afterrandom
         privateKey: ${{ secrets.SSH_PRIV_NAME}}
+        port: ${{ secrets.PORT }}
