@@ -1,0 +1,18 @@
+name: remote ssh command
+on: [push]
+jobs:
+
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+    - name: Deploy to Staging server
+    uses: easingthemes/ssh-deploy@main
+    env:
+      SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIV }}
+      ARGS: "-avzh -e 'ssh -p 9022'"
+      SOURCE: "/"
+      REMOTE_HOST: afterrandom.com.ar
+      REMOTE_USER: afterrandom
+      TARGET: "/home10/afterrandom/public_html/"
+      EXCLUDE: "/.github/, /node_modules/"
