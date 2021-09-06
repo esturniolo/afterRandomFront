@@ -16,7 +16,7 @@ jobs:
         # script: whoami
         # script: echo "eas was here" > ~/public_html/eas.html
         script: pwd
-        if_key_exists: fail
+        if_key_exists: ignore
         name: ${{ secrets.SSH_KEY_NAME }}
     - name: sending new files to public
       run: echo "mirar que hizo el script del with"
