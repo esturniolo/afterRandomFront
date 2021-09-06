@@ -1,19 +1,21 @@
-name: remote ssh command
-on: [push]
-jobs:
+name: DEPLOY
+on:
+  push:
+    branches:
+    - master
 
-  build:
-    name: Build
+jobs:
+  deploy:
     runs-on: ubuntu-latest
     steps:
-    - name: Deploy to Staging server
-      uses: easingthemes/ssh-deploy@main
-      env:
-        SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIV }}
-        ARGS: "-avzh"
-        SOURCE: "/"
-        REMOTE_HOST: afterrandom.com.ar
-        REMOTE_USER: afterrandom
-        REMOTE_PORT: 9022
-        TARGET: "/home10/afterrandom/public_html"
-        EXCLUDE: "/.github/, /node_modules/"
+    - uses: actions/checkout@v2
+    - name: rsync deployments
+      uses: burnett01/rsync-deployments@5.1
+      with:
+        switches: -avzr --delete
+        path: /
+        remote_path: /home10/afterrandom/public_html
+        remote_host: afterrandom.com.ar
+        remote_user: afterrandom
+        remote_port: 9022
+        remote_key: ${{ secrets.SSH_PRIV_KEY }}
