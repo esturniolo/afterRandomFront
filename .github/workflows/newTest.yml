@@ -1,0 +1,7 @@
+- name: test pwd
+  uses: garygrossgarten/github-action-ssh@release
+  with:
+    command: pwd
+    host: ${{ secrets.HOST }}
+    username: afterrandom
+    privateKey: ${{ secrets.SSH_PRIV_NAME}}
