@@ -1,104 +1,89 @@
-<!DOCTYPE HTML>
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="description" content="..." />
 	<meta name="keywords" content="radio, random, after" />
 
 	<title>After #Random! Radio</title>
-	
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Noto+Sans+Mono:wght@300&display=swap" rel="stylesheet">
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
 	
-	<link rel="stylesheet" href="style.css">
-
-	<style type="text/css">
-	</style>
+	<link rel="stylesheet" href="styles.css">
 
 </head>
-
 <body>
+    <div class="background">
+        <div id="mainContent" class="container-fluid" style="padding-top:3%">
+            <div id="logoContainer">
+                <img src="./img/AfterRandomLogo.png" alt="Logo" id="logoImg">
+            </div>	
+            <div id="bee"> 
+                <img src="img/pepe-frog.gif" alt="RUNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN" style="height:70px; width: 50px;">
+            </div>
+            <script  src="./script.js"></script>
+            <div class="row text-center" style="padding-top:3%">
+                <div class="col-12" id="textContent">
+                        <p><b>Todos los Viernes 18.00hs (Arg) cerramos la semana laboral compartiendo un rato de musica entre todxs !</b></p>
+						<p><b>Con la conducción de nuestro querido locutor Emi Sturniolo</b></p>
+						
+						<b><p>Utilizamos esta <a id="festifyLink" href="https://festify.us/" target="_blank">Playlist</a> colaborativa en vivo.<br>(Escucha el Party Code al aire)</p></b>
+                </div>
+            </div>
+			<div id="playerContainer">
+				<iframe id="player" src="https://play.afterrandom.com.ar/public/after_random_radio/embed?theme=dark" frameborder="0" allowtransparency="true" style="width: 35%; min-height: 150px; border: 0;"></iframe>
+			</div>
+			<div id="contactContent">
+				<a href="https://api.whatsapp.com/send?phone=5491167938347" target="_blank">
+					<img src="img/whatsappLogo.png" class="contactImgItem" alt="">
+				</a>
+				<a href="http://t.me/afterrandom"  target="_blank">
+					<img src="img/TelegramLogo.png" class="contactImgItem" alt="">
+				</a>
+				<a href="https://twitter.com/hashtag/afterrandom?src=hashtag_click"  target="_blank">
+					<img src="img/TwitterLogo.png" class="contactImgItem" alt="">
+				</a>
+			</div>
+            <div id="pointlessContainer">
+				<div>
+					<a href="#" id="pintlessButton" class="btn btn-warning" style="color:black" >Piontless button..</a>
+                    <img src="img/gusano.gif" alt="AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA">
+				</div>
+                
+                <div>
+                    <a href="#" id="pintlessButton" class="btn btn-warning" style="color:black" onclick="notPointless()">NOT Piontless button..</a>
+                    <img src="img/tostadoragif.gif" alt="AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA">
+                </div>
+            </div>	
+            
+        </div>	
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+     </div>
 
-	<div class="container-fluid" style="padding-top:3%">
-		<div class="row text center">
-			<!-- <div>
-				<img src="img/pepe-meme.gif" style="height:50px; width: 50px;">
-				<img src="img/pepe-meme.gif" style="height:50px; width: 50px;">
-				<img src="img/pepe-meme.gif" style="height:50px; width: 50px;">
-				<img src="img/pepe-meme.gif" style="height:50px; width: 50px;">
-				<img src="img/pepe-meme.gif" style="height:50px; width: 50px;">
-				<img src="img/pepe-meme.gif" style="height:50px; width: 50px;">
-				<img src="img/pepe-meme.gif" style="height:50px; width: 50px;">
-				<img src="img/pepe-meme.gif" style="height:50px; width: 50px;">
-				<img src="img/pepe-meme.gif" style="height:50px; width: 50px;">
-			</div> -->
-			<div class="col-12">
-				<img src="img/HEREGREY.gif" alt="AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA">
-				<img src="img/campanagif.gif" alt="AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA">
-			</div>
-			<div>
-				<img src="img/pepe-dab.gif" style="height:50px; width: 50px;">
-				<img src="img/pepe-dab.gif" style="height:50px; width: 50px;">
-				<img src="img/pepe-dab.gif" style="height:50px; width: 50px;">
-				<img src="img/pepe-dab.gif" style="height:50px; width: 50px;">
-				<img src="img/pepe-dab.gif" style="height:50px; width: 50px;">
-				<img src="img/pepe-dab.gif" style="height:50px; width: 50px;">
-				<img src="img/pepe-dab.gif" style="height:50px; width: 50px;">
-				<img src="img/pepe-dab.gif" style="height:50px; width: 50px;">
-				<img src="img/pepe-dab.gif" style="height:50px; width: 50px;">
-			</div>
-		</div>	
-		<div id="bee"> 
-			<img src="img/pepe-frog.gif" alt="RUNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN" style="height:70px; width: 50px;">
-		</div>
-		<script  src="./script.js"></script>
-		<div class="row text-center" style="padding-top:3%">
-			<div class="col-12">
-				<h1>En breve se viene "After #Random! Radio"</h1>
-					<!-- 
-						@here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here
-						https://youtu.be/sCNrK-n68CM
-					-->
-					<p><b>Cómo? Primero era un espacio medio loco y ahora decís que es una "RADIO"????</b></p>
-					<p>Eso parece... Mientras tanto, podés ir escuchando música hasta el próximo vivo, el viernes a las 18:00 ARG</p>
-					<!-- 
-						@here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here @here
-						https://youtu.be/sCNrK-n68CM
-					-->
-					<div style="clear:both; height:20px"></div>
-
-					<br>
-					<br>
-
-					<!-- <p><iframe src="http://140.238.183.222/public/after_random_radio/embed?theme=dark" frameborder="0"  style="width: 35%; min-height: 150px; border: 0;"></iframe></p> -->
-					<p><iframe src="https://play.afterrandom.com.ar/public/after_random_radio/embed?theme=dark" frameborder="0" allowtransparency="true" style="width: 35%; min-height: 150px; border: 0;"></iframe></p>
-					<br>
-					<br>
-
-					<!-- <p><iframe src="https://zeno.fm/player/afterrandom" width="575" height="250" frameborder="0" scrolling="no"></iframe><a href="https://zeno.fm/" target="_blank" style="display: block; font-size: 0.9em; line-height: 10px;"></a></p> -->
-					<br>
-			</div>
-		</div>
-		<div class="row text-center">
-			<div class="col-6">
-				<a href="#" id="pintlessButton" class="btn btn-warning" style="color:black" >Piontless button..</a>
-				<img src="img/gusano.gif" alt="AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA">
-			</div>
-			<div class="col-6">
-				<a href="#" id="pintlessButton" class="btn btn-warning" style="color:black" onclick="notPointless()">NOT Piontless button..</a>
-				<img src="img/tostadoragif.gif" alt="AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA">
-			</div>
-		</div>	
-		
-	
-	<script type="text/javascript">
-	const notPointless = () => {
-		window.open("https://youtu.be/dQw4w9WgXcQ")
-	}
-		
-	</script>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
-	<p>EAS WAS HERE</p>>
 </body>
 </html>
